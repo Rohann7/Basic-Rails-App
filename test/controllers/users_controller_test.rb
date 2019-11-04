@@ -15,7 +15,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create user" do
+  test "should create users" do
     assert_difference('User.count') do
       post users_url, params: { user: { email: @user.email, name: @user.name } }
     end
